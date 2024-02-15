@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-14T23:45:21 EST" name="Bank Test Suite" finished-at="2024-02-14T23:45:26 EST" duration-ms="5472">
+    <groups>
+      <group name="Sanity">
+        <method signature="HomePageTest.TestBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" name="TestBankManagerLogin" class="com.pro.testcases.HomePageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="HomePageTest.TestBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" name="TestBankManagerLogin" class="com.pro.testcases.HomePageTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="HomePageTest.TestBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" name="TestBankManagerLogin" class="com.pro.testcases.HomePageTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2024-02-14T23:45:21 EST" name="Adding customer" finished-at="2024-02-14T23:45:26 EST" duration-ms="5472">
+      <class name="com.pro.testcases.HomePageTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-02-14T23:45:20 EST" name="setupSuite" finished-at="2024-02-14T23:45:21 EST" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-02-14T23:45:21 EST" name="setup" finished-at="2024-02-14T23:45:25 EST" duration-ms="4071" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1883871b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-02-14T23:45:25 EST" name="TestBankManagerLogin" finished-at="2024-02-14T23:45:26 EST" duration-ms="1175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBankManagerLogin -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-02-14T23:45:26 EST" name="tearDownMethod" finished-at="2024-02-14T23:45:26 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestBankManagerLogin status=SUCCESS method=HomePageTest.TestBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.pro.testcases.HomePageTest.TestBankManagerLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-02-14T23:45:26 EST" name="Teardown" finished-at="2024-02-14T23:45:26 EST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="genrateReport()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-02-14T23:45:26 EST" name="genrateReport" finished-at="2024-02-14T23:45:27 EST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- genrateReport -->
+      </class> <!-- com.pro.testcases.HomePageTest -->
+    </test> <!-- Adding customer -->
+  </suite> <!-- Bank Test Suite -->
+</testng-results>
