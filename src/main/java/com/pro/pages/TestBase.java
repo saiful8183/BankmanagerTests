@@ -31,8 +31,12 @@ public class TestBase {
 	public ConfigDataProvider config;
 	public ExcelDataProvider excel;
 
-	public static ExtentReports extentReports; // for report and attatch screenshot
-	public static ExtentTest extentTest; // for report and attatch screenshot
+	public static ExtentReports reports;
+	public static ExtentTest extentTest;
+
+	// public static ExtentReports extentReports; // for report and attatch
+	// screenshot
+	// public static ExtentTest extentTest; // for report and attatch screenshot
 
 	@BeforeSuite
 	public void setupSuite() {
@@ -40,20 +44,36 @@ public class TestBase {
 		config = new ConfigDataProvider();
 		excel = new ExcelDataProvider();
 
-		extentReports = new ExtentReports(); // for report and attatch screenshot
-		ExtentSparkReporter sparkReporter = new ExtentSparkReporter("Reports/report.html"); // for report and attatch
-																							// screenshot
-		sparkReporter.config().setReportName("Bank Test"); // for report and attatch screenshot
-		extentReports.attachReporter(sparkReporter); // for report and attatch screenshot
-		extentReports.setSystemInfo("OS", System.getProperty("os.name")); // for report and attatch screenshot
-		extentReports.setSystemInfo("Java Version", System.getProperty("java.version")); // for report and attatch
-																							// screenshot
+		reports = new ExtentReports();
+		ExtentSparkReporter extentSparkReporter = new ExtentSparkReporter("Reports/report.html");
+		extentSparkReporter.config().setReportName("My Test..............");
+
+		reports.attachReporter(extentSparkReporter);
+
+		reports.setSystemInfo("OS", System.getProperty("os.name"));
+
+		reports.setSystemInfo("Java version", System.getProperty("java.version"));
+
+		// extentReports =new ExtentReports();
+		// ExtentSparkReporter sparkReporter=new
+		// ExtentSparkReporter("Reports/report.html"); // screenshot
+		// sparkReporter.config().setReportName("Bank Test"); // for report and attatch
+		// screenshot
+		// extentReports.attachReporter(sparkReporter); // for report and attatch
+		// screenshot
+
+		// extentReports.setSystemInfo("OS", System.getProperty("os.name")); // for
+		// report and attatch screenshot
+
+		// extentReports.setSystemInfo("Java Version",
+		// System.getProperty("java.version")); // for report and attatch
+		// screenshot
 
 	}
 
 	@AfterSuite // for report and attatch screenshot
 	public void genrateReport() throws Exception { // for report and attatch screenshot
-		extentReports.flush(); // for report and attatch screenshot
+		reports.flush(); // for report and attatch screenshot
 		Desktop.getDesktop().open(new File("Reports/report.html")); // for report and attatch screenshot
 	}
 
@@ -63,14 +83,19 @@ public class TestBase {
 
 		driver = BrowserFactory.launchapplication(driver, browserName, config.getUrl());
 
-		Capabilities capabilities = ((RemoteWebDriver) driver).getCapabilities(); // for report and attatch screenshot
-		String device = capabilities.getBrowserName() + "_" + capabilities.getBrowserVersion(); // for report and
-																								// attatch screenshot
-		String author = context.getCurrentXmlTest().getParameter("author"); // for report and attatch screenshot
-		extentTest = extentReports.createTest(context.getName()); // for report and attatch screenshot
+		// Capabilities capabilities = ((RemoteWebDriver) driver).getCapabilities(); //
+		// for report and attatch screenshot
+		// String device = capabilities.getBrowserName() + "_" +
+		// capabilities.getBrowserVersion(); // for report and
+		// attatch screenshot
+		// String author = context.getCurrentXmlTest().getParameter("author"); // for
+		// report and attatch screenshot
 
-		extentTest.assignAuthor(author); // for report and attatch screenshot
-		extentTest.assignDevice(device); // for report and attatch screenshot
+		// extentTest = reports.createTest(context.getName()); // for report and attatch
+		// screenshot
+
+		// extentTest.assignAuthor(author); // for report and attatch screenshot
+		// extentTest.assignDevice(device); // for report and attatch screenshot
 
 	}
 
@@ -85,9 +110,6 @@ public class TestBase {
 	public void tearDownMethod(ITestResult result, Method m) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 
-			
-			
-			
 			extentTest.fail(m.getName() + " failed");
 
 			String screenshotPath = Util.captureScreenshot(driver, m.getName()); // for report and attatch screenshot //

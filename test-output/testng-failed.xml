@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Bank Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="HomePageTest(failed)">
+<suite name="Failed suite [Bank Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Adding customer(failed)">
+    <parameter name="author" value="Ruben"/>
+    <parameter name="browserName" value="Edge"/>
     <classes>
       <class name="com.pro.testcases.HomePageTest">
         <methods>
@@ -14,5 +16,5 @@
         </methods>
       </class> <!-- com.pro.testcases.HomePageTest -->
     </classes>
-  </test> <!-- HomePageTest(failed) -->
-</suite> <!-- Failed suite [Bank Suite] -->
+  </test> <!-- Adding customer(failed) -->
+</suite> <!-- Failed suite [Bank Test Suite] -->
