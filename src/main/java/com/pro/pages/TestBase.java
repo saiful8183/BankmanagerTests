@@ -34,8 +34,7 @@ public class TestBase {
 	public static ExtentReports reports;
 	public static ExtentTest extentTest;
 
-	// public static ExtentReports extentReports; // for report and attatch
-	// screenshot
+	// public static ExtentReports extentReports; // for report and attatch screenshot
 	// public static ExtentTest extentTest; // for report and attatch screenshot
 
 	@BeforeSuite
@@ -54,19 +53,17 @@ public class TestBase {
 
 		reports.setSystemInfo("Java version", System.getProperty("java.version"));
 
-		// extentReports =new ExtentReports();
-		// ExtentSparkReporter sparkReporter=new
-		// ExtentSparkReporter("Reports/report.html"); // screenshot
-		// sparkReporter.config().setReportName("Bank Test"); // for report and attatch
-		// screenshot
-		// extentReports.attachReporter(sparkReporter); // for report and attatch
-		// screenshot
+		reports =new ExtentReports();
+		 ExtentSparkReporter sparkReporter=new
+		 ExtentSparkReporter("Reports/report.html"); // screenshot
+		 sparkReporter.config().setReportName("Bank Test"); // for report and attatch screenshot
+		 reports.attachReporter(sparkReporter); // for report and attatch screenshot
 
-		// extentReports.setSystemInfo("OS", System.getProperty("os.name")); // for
+		 reports.setSystemInfo("OS", System.getProperty("os.name")); // for
 		// report and attatch screenshot
 
-		// extentReports.setSystemInfo("Java Version",
-		// System.getProperty("java.version")); // for report and attatch
+		 reports.setSystemInfo("Java Version",
+		 System.getProperty("java.version")); // for report and attatch
 		// screenshot
 
 	}
@@ -83,19 +80,17 @@ public class TestBase {
 
 		driver = BrowserFactory.launchapplication(driver, browserName, config.getUrl());
 
-		// Capabilities capabilities = ((RemoteWebDriver) driver).getCapabilities(); //
+		 Capabilities capabilities = ((RemoteWebDriver) driver).getCapabilities(); //
 		// for report and attatch screenshot
-		// String device = capabilities.getBrowserName() + "_" +
-		// capabilities.getBrowserVersion(); // for report and
+		 String device = capabilities.getBrowserName() + "_" + capabilities.getBrowserVersion(); // for report and
 		// attatch screenshot
-		// String author = context.getCurrentXmlTest().getParameter("author"); // for
+		 String author = context.getCurrentXmlTest().getParameter("author"); // for
 		// report and attatch screenshot
 
-		// extentTest = reports.createTest(context.getName()); // for report and attatch
-		// screenshot
+		 extentTest = reports.createTest(context.getName()); // for report and attatch// screenshot
 
-		// extentTest.assignAuthor(author); // for report and attatch screenshot
-		// extentTest.assignDevice(device); // for report and attatch screenshot
+		 extentTest.assignAuthor(author); // for report and attatch screenshot
+		 extentTest.assignDevice(device); // for report and attatch screenshot
 
 	}
 
@@ -106,6 +101,8 @@ public class TestBase {
 
 	}
 
+	
+	
 	@AfterMethod
 	public void tearDownMethod(ITestResult result, Method m) {
 		if (result.getStatus() == ITestResult.FAILURE) {
@@ -127,5 +124,6 @@ public class TestBase {
 		}
 		extentTest.assignCategory(m.getAnnotation(Test.class).groups());
 	}
+
 
 }

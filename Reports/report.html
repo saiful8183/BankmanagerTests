@@ -32,10 +32,10 @@
 </ul>
 <ul class="nav-right">
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">My Test..............</span></a>
+<a href="#"><span class="badge badge-primary">Bank Test</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 5, 2024 02:08:19 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 17, 2024 10:47:49 AM</span></a>
 </li>
 </ul>
 </div>
@@ -55,6 +55,16 @@
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
 <a id="nav-category" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('device-view')">
+<a id="nav-device" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tablet"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -82,22 +92,34 @@
 </ul>
 </li>
 <li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Ruben</a>
+</ul>
+</li>
+<li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">Sanity</a><a class="dropdown-item" href="#">Regression</a><a class="dropdown-item" href="#">Smoke</a>
+<a class="dropdown-item" href="#">Smoke</a><a class="dropdown-item" href="#">Sanity</a><a class="dropdown-item" href="#">Regression</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tablet"></i></a>
+<ul id="device-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">MicrosoftEdge_123.0.2420.97</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
         <li class="test-item"  status="fail" test-id="1"
-          author=""
+          author="Ruben"
           tag="Regression Sanity Smoke"
-          device="">
+          device="MicrosoftEdge_123.0.2420.97">
           <div class="test-detail">
             <p class="name">Adding customer</p>
             <p class="text-sm">
-              <span>2:08:22 PM</span> / <span>00:00:30:430</span>
+              <span>10:47:52 AM</span> / <span>00:00:30:493</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,19 +128,21 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Adding customer</h5>
-<span class='badge badge-success'>04.05.2024 2:08:22 PM</span>
-<span class='badge badge-danger'>04.05.2024 2:08:53 PM</span>
-<span class='badge badge-default'>00:00:30:430</span>
+<span class='badge badge-success'>04.17.2024 10:47:52 AM</span>
+<span class='badge badge-danger'>04.17.2024 10:48:22 AM</span>
+<span class='badge badge-default'>00:00:30:493</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Regression</span>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ruben</span>
+<span class="badge badge-pill badge-default">Regression</span>
 <span class="badge badge-pill badge-default">Sanity</span>
-<span class="badge badge-pill badge-default">Smoke</span></div>
+<span class="badge badge-pill badge-default">Smoke</span>
+<span class="badge badge-pill badge-default">MicrosoftEdge_123.0.2420.97</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\AutomationPracticeWorkspace\FinalFramworkProject2\.\ScreenShot\TestBankManagerLogin_05-04-2024_02_08_52.png' src="D:\AutomationPracticeWorkspace\FinalFramworkProject2\.\ScreenShot\TestBankManagerLogin_05-04-2024_02_08_52.png">
+<img data-featherlight='D:\AutomationPracticeWorkspace\FinalFramworkProject2\.\ScreenShot\TestBankManagerLogin_17-04-2024_10_48_22.png' src="D:\AutomationPracticeWorkspace\FinalFramworkProject2\.\ScreenShot\TestBankManagerLogin_17-04-2024_10_48_22.png">
     
     </div></div>
 <div class="detail-body mt-4">
@@ -127,21 +151,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:08:22 PM</td>
+        <td>10:47:52 AM</td>
         <td>
           Browser launched
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:08:52 PM</td>
+        <td>10:48:22 AM</td>
         <td>
           TestBankManagerLogin failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:08:53 PM</td>
+        <td>10:48:22 AM</td>
         <td>
           <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[@ng-click='manag()']' (tried for 5 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
@@ -178,14 +202,14 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@ng-click='manag()']"}
-  (Session info: MicrosoftEdge=123.0.2420.65)
+  (Session info: MicrosoftEdge=123.0.2420.97)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0ea3b84a0f7e3223ca35fa5ee50d2d16, findElement {using=xpath, value=//button[@ng-click='manag()']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50840}, msedge: {msedgedriverVersion: 123.0.2420.65 (49b6a5859239..., userDataDir: C:\Users\Manha\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50840/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ea3b84a0f7e3223ca35fa5ee50d2d16
+Command: [df4eae8d85faa5ae3e72b4d5d1eea7d5, findElement {using=xpath, value=//button[@ng-click='manag()']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.97, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51553}, msedge: {msedgedriverVersion: 123.0.2420.97 (ba5f45140663..., userDataDir: C:\Users\Manha\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51553/devtoo..., se:cdpVersion: 123.0.2420.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df4eae8d85faa5ae3e72b4d5d1eea7d5
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -263,7 +287,7 @@ Session ID: 0ea3b84a0f7e3223ca35fa5ee50d2d16
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:08:22 PM</td>
+<td>10:47:52 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>Adding customer</a>
 </td>
@@ -293,6 +317,39 @@ Session ID: 0ea3b84a0f7e3223ca35fa5ee50d2d16
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
+<p class="name">Smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Smoke</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:47:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Adding customer</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
 <p class="name">Sanity</p>
 <p class="duration text-sm">1 tests</p>
 </div>
@@ -312,7 +369,7 @@ Session ID: 0ea3b84a0f7e3223ca35fa5ee50d2d16
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:08:22 PM</td>
+<td>10:47:52 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>Adding customer</a>
 </td>
@@ -345,7 +402,7 @@ Session ID: 0ea3b84a0f7e3223ca35fa5ee50d2d16
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:08:22 PM</td>
+<td>10:47:52 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>Adding customer</a>
 </td>
@@ -354,17 +411,33 @@ Session ID: 0ea3b84a0f7e3223ca35fa5ee50d2d16
 </table>
 </div>
 </li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view device-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Device</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">Smoke</p>
+<p class="name">MicrosoftEdge_123.0.2420.97</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>Smoke</h4>
+<h4>MicrosoftEdge_123.0.2420.97</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -378,7 +451,56 @@ Session ID: 0ea3b84a0f7e3223ca35fa5ee50d2d16
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:08:22 PM</td>
+<td>10:47:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Adding customer</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">Ruben</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Ruben</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:47:52 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>Adding customer</a>
 </td>
@@ -400,13 +522,13 @@ Session ID: 0ea3b84a0f7e3223ca35fa5ee50d2d16
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 5, 2024 02:08:19 PM</h3>
+<h3>Apr 17, 2024 10:47:49 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 5, 2024 02:08:53 PM</h3>
+<h3>Apr 17, 2024 10:48:23 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -476,15 +598,41 @@ Session ID: 0ea3b84a0f7e3223ca35fa5ee50d2d16
 </div></div>
 <script>
 var timeline = {
-"Adding customer":30.43
+"Adding customer":30.493
 };
 </script>
 <div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>Ruben</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 <div class="col-lg-6 col-md-12 category-container">
 <div class="card">
 <div class="card-header"><p>Tags</p></div>
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Smoke</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
 <tr>
 <td>Sanity</td>
 <td>0</td>
@@ -501,8 +649,18 @@ var timeline = {
 <td>0</td>
 <td>0%</td>
 </tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 device-container">
+<div class="card">
+<div class="card-header"><p>Device</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
 <tr>
-<td>Smoke</td>
+<td>MicrosoftEdge_123.0.2420.97</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -524,7 +682,7 @@ var timeline = {
 <td>Windows 11</td>
 </tr>
 <tr>
-<td>Java version</td>
+<td>Java Version</td>
 <td>17.0.6</td>
 </tr>
 </tbody>

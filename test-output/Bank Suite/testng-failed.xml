@@ -5,7 +5,6 @@
     <classes>
       <class name="com.pro.testcases.HomePageTest">
         <methods>
-          <include name="tearDownMethod"/>
           <include name="setup"/>
           <include name="TestBankManagerLogin"/>
           <include name="Teardown"/>
