@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-17T11:30:32 EDT" name="Bank Test Suite" finished-at="2024-04-17T11:31:05 EDT" duration-ms="33435">
+  <suite started-at="2024-04-17T11:38:49 EDT" name="Bank Test Suite" finished-at="2024-04-17T11:38:54 EDT" duration-ms="4711">
     <groups>
       <group name="Sanity">
         <method signature="HomePageTest.TestBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" name="TestBankManagerLogin" class="com.pro.testcases.HomePageTest"/>
@@ -14,13 +14,13 @@
         <method signature="HomePageTest.TestBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" name="TestBankManagerLogin" class="com.pro.testcases.HomePageTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-04-17T11:30:32 EDT" name="Adding customer" finished-at="2024-04-17T11:31:05 EDT" duration-ms="33435">
+    <test started-at="2024-04-17T11:38:49 EDT" name="Adding customer" finished-at="2024-04-17T11:38:54 EDT" duration-ms="4711">
       <class name="com.pro.testcases.HomePageTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:30:31 EDT" name="setupSuite" finished-at="2024-04-17T11:30:32 EDT" duration-ms="586" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:38:48 EDT" name="setupSuite" finished-at="2024-04-17T11:38:49 EDT" duration-ms="677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:30:32 EDT" name="setup" finished-at="2024-04-17T11:30:35 EDT" duration-ms="2663" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:38:49 EDT" name="setup" finished-at="2024-04-17T11:38:52 EDT" duration-ms="3335" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,100 +29,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@5463f035]]>
+                <![CDATA[org.testng.TestRunner@2035d65b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:30:35 EDT" name="TestBankManagerLogin" finished-at="2024-04-17T11:31:05 EDT" duration-ms="30129" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[@ng-click='manag()']' (tried for 5 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[@ng-click='manag()']' (tried for 5 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at com.pro.pages.PageBaes.doclick(PageBaes.java:26)
-at com.pro.pages.HomePage.bankManagerLogin(HomePage.java:45)
-at com.pro.testcases.HomePageTest.TestBankManagerLogin(HomePageTest.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@ng-click='manag()']"}
-  (Session info: MicrosoftEdge=123.0.2420.97)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d636efa96ca25fdbdbd7e1dc03da2560, findElement {using=xpath, value=//button[@ng-click='manag()']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.97, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52070}, msedge: {msedgedriverVersion: 123.0.2420.97 (ba5f45140663..., userDataDir: C:\Users\Manha\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52070/devtoo..., se:cdpVersion: 123.0.2420.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d636efa96ca25fdbdbd7e1dc03da2560
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="TestBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:38:52 EDT" name="TestBankManagerLogin" finished-at="2024-04-17T11:38:54 EDT" duration-ms="1196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestBankManagerLogin -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:31:05 EDT" name="tearDownMethod" finished-at="2024-04-17T11:31:05 EDT" duration-ms="343" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:38:54 EDT" name="tearDownMethod" finished-at="2024-04-17T11:38:54 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestBankManagerLogin status=FAILURE method=HomePageTest.TestBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c] output={null}]]]>
+                <![CDATA[[TestResult name=TestBankManagerLogin status=SUCCESS method=HomePageTest.TestBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -134,11 +56,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:31:05 EDT" name="Teardown" finished-at="2024-04-17T11:31:05 EDT" duration-ms="266" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:38:54 EDT" name="Teardown" finished-at="2024-04-17T11:38:54 EDT" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="genrateReport()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:31:06 EDT" name="genrateReport" finished-at="2024-04-17T11:31:07 EDT" duration-ms="1056" status="PASS">
+        <test-method is-config="true" signature="genrateReport()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2024-04-17T11:38:54 EDT" name="genrateReport" finished-at="2024-04-17T11:38:54 EDT" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- genrateReport -->
