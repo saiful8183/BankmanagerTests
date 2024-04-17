@@ -15,7 +15,7 @@ public class HomePage extends PageBaes {
 	  super(driver);
 	  }
 	  
-	  @FindBy(xpath = "//button[@ng-click='manag()']")
+	  @FindBy(xpath = "//button[@ng-click='manager()']")
 	  
 	  public WebElement managerLoginButton;
 	  
